@@ -3,10 +3,11 @@
         <h2>Contact</h2>
         <p>Please Sent to Email Us contact@somrat.info</p>
         <h3>Location</h3>
-        <ul>
-            <li>Mirpur Dhaka</li>
-            <li>Road No. 21</li>
-            <li>01823387518</li>
+        <ul ng-repeat="contact in contacts">
+            <li>{{contact.name}}</li>
+            <li>{{contact.street_address}}</li>
+            <li>{{contact.city}} {{contact.state}}, {{contact.zip}}</li>
+            <li>{{contact.phone}}</li>
         </ul>
     </div>
 </div>

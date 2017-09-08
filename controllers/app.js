@@ -11,11 +11,11 @@ myApp.config(function($routeProvider) {
         })
         .when("/service", {
             templateUrl : "templates/service.html",
-            controller : "MainController"
+            controller : "ServicesController"
         })
         .when("/contact", {
             templateUrl : "templates/contact.html",
-            controller : "MainController"
+            controller : "ContactsController"
         })
         .otherwise({
             redirectTo : '/'
